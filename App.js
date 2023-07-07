@@ -4,10 +4,11 @@ class API {
         this.url = url
     }
 
-    getChuckNorrisAPI() {
-        let returnAPI = document.querySelector('#return')
-        returnAPI.classList.add('return')
-        fetch(this.url)
+    getAPI() {
+        if(this.name == "Chuck Norris") {
+            let returnAPI = document.querySelector('#return')
+            returnAPI.classList.add('return')
+            fetch(this.url)
             .then(response => response.json())
             .then(data => returnAPI.innerHTML = `
             <div class="cardChuckNorris">
@@ -17,13 +18,12 @@ class API {
             </div>
             `)
             .catch(error => console.error(error))
-    }
-
-    getPokemonAPI() {
-        let returnAPI = document.querySelector('#return')
-        returnAPI.classList.add('return')
-        let id = Math.floor(Math.random() * (649 - 1 + 1)) + 1
-        fetch(`${this.url}/${id}`)
+        }
+        if(this.name == "Pokemon") {
+            let returnAPI = document.querySelector('#return')
+            returnAPI.classList.add('return')
+            let id = Math.floor(Math.random() * (649 - 1 + 1)) + 1
+            fetch(`${this.url}/${id}`)
             .then(response => response.json())
             .then(data => returnAPI.innerHTML = `
                 <div class="cardPokemon">
@@ -37,7 +37,8 @@ class API {
                 </div>
                 `)
             .catch(error => console.error(error))
-    }
+        }
+    }   
 }
 
 function reloadPage() {
