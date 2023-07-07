@@ -17,10 +17,10 @@ button.onclick = function runAPI() {
     }
 
     if(option[1].selected) {
-        chuckNorrisAPI.getChuckNorrisAPI()
+        chuckNorrisAPI.getAPI()
     }
 
     if(option[2].selected) {
-        pokemonAPI.getPokemonAPI()
+        pokemonAPI.getAPI()
     }
 }
