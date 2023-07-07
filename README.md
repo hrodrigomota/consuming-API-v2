@@ -7,8 +7,10 @@
 ## 📑 Description
 
 <p>Consuming API 2.0 was made to practice using more than one Application Programming Interface - API in the same project. In this case, Chuck Norris.io and PokéAPI were used.</p>
+<p>
 
-⚠️ **Unlike the previous version, in this project the intention was to use the object-oriented programming paradigm.** ⚠️
+  ⚠️ **Unlike the previous version, in this project the intention was to use the object-oriented programming paradigm.** ⚠️
+</p>
 
 <p>
   The APIs are available on the following websites:
